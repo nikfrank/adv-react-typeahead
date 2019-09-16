@@ -2,32 +2,33 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Typeahead {
+  position: relative;
+  max-width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Typeahead input {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Typeahead ul.closed {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Typeahead ul.open {
+  display: block;
+}
+
+.Typeahead ul {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+
+  padding-left: 0;
+  list-style: none;
+  border: 1px solid black;
+}
+
+.Typeahead ul li {
+  padding: 8px;
 }
